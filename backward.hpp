@@ -1726,7 +1726,7 @@ class Colorize {
 public:
 	Colorize(std::ostream&) {}
 	void activate() {}
-	void activate_if_tty() {}
+	void activate_if_tty(std::FILE*) {}
 	void set_color(Color::type) {}
 };
 
